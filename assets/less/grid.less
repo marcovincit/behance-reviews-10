@@ -1,0 +1,90 @@
+@amount-modular-grid-col: 18;
+@amount-modular-grid-row: 9;
+
+
+.make-grid(@querie) {
+
+    ////////COL////////
+    .loop-grid-col (@i) when (@i > 0) {
+
+      .col-@{querie}-@{i} { width: 100vw/18*@i; }
+
+      .left-@{querie}-@{i} { left: 100vw/18*@i; }
+      .right-@{querie}-@{i} { right: 100vw/18*@i; }
+
+      .margin-left-@{querie}-@{i} { margin-left: 100vw/18*@i;; }
+      .margin-right-@{querie}-@{i} { margin-right: 100vw/18*@i;}
+
+      .padding-left-@{querie}-@{i} { padding-left: 100vw/18*@i;}
+      .padding-right-@{querie}-@{i} { padding-right: 100vw/18*@i; }
+
+      .loop-grid-col(@i - 1);
+    }
+
+    .loop-grid-col(@amount-modular-grid-col);
+
+
+    ////////ROW////////
+
+    .loop-grid-row (@i) when (@i > 0) {
+
+      .row-@{querie}-@{i} { height: 100vh/9*@i; }
+      .top-@{querie}-@{i} { top: 100vh/9*@i; }
+      .bottom-@{querie}-@{i} { bottom: 100vh/9*@i; }
+
+      .margin-top-@{querie}-@{i} { margin-top: 100vh/9*@i;}
+      .margin-bottom-@{querie}-@{i} { margin-bottom: 100vh/9*@i;}
+
+      .padding-top-@{querie}-@{i} { padding-top: 100vh/9*@i;}
+      .padding-bottom-@{querie}-@{i} { padding-bottom: 100vh/9*@i; }
+
+      .loop-grid-row(@i - 1);
+    }
+
+    .loop-grid-row(@amount-modular-grid-row);
+
+
+    .top-@{querie}-0 { top: 0; }
+    .bottom-@{querie}-0 { bottom: 0; }
+    .left-@{querie}-0 { left: 0; }
+    .right-@{querie}-0 { right: 0;}
+
+
+    .margin-top-@{querie}-0 { margin-top: 0; }
+    .margin-bottom-@{querie}-0 { margin-bottom: 0; }
+    .margin-left-@{querie}-0 { margin-left: 0; }
+    .margin-right-@{querie}-0 { margin-right: 0;}
+
+
+    .padding-top-@{querie}-0 { padding-top: 0; }
+    .padding-bottom-@{querie}-0 { padding-bottom: 0; }
+    .padding-left-@{querie}-0 { padding-left: 0; }
+    .padding-right-@{querie}-0 { padding-right: 0;}
+
+
+    .relative-@{querie}{ position: relative; }
+    .fixed-@{querie}{ position: fixed; }
+    .absolute-@{querie}{ position: absolute; }
+
+    .hidden-@{querie} {display: none;}
+    .visible-@{querie} {display: block;}
+
+}
+
+
+.make-grid(xs);
+
+
+@media (min-width: 750px) {
+  .make-grid(sm);
+}
+
+
+@media (min-width: 970px) {
+  .make-grid(md);
+}
+
+
+@media (min-width: 1170px) {
+  .make-grid(lg);
+}
