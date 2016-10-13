@@ -1,5 +1,5 @@
 @amount-modular-grid-col: 18;
-@amount-modular-grid-row: 9;
+@amount-modular-grid-row: 19;
 
 
 .make-grid(@querie) {
@@ -7,16 +7,16 @@
     ////////COL////////
     .loop-grid-col (@i) when (@i > 0) {
 
-      .col-@{querie}-@{i} { width: 100vw/18*@i; }
+      .col-@{querie}-@{i} { width: 100vw/@amount-modular-grid-col*@i; }
 
-      .left-@{querie}-@{i} { left: 100vw/18*@i; }
-      .right-@{querie}-@{i} { right: 100vw/18*@i; }
+      .left-@{querie}-@{i} { left: 100vw/@amount-modular-grid-col*@i; }
+      .right-@{querie}-@{i} { right: 100vw/@amount-modular-grid-col*@i; }
 
-      .margin-left-@{querie}-@{i} { margin-left: 100vw/18*@i;; }
-      .margin-right-@{querie}-@{i} { margin-right: 100vw/18*@i;}
+      .margin-left-@{querie}-@{i} { margin-left: 100vw/@amount-modular-grid-col*@i;; }
+      .margin-right-@{querie}-@{i} { margin-right: 100vw/@amount-modular-grid-col*@i;}
 
-      .padding-left-@{querie}-@{i} { padding-left: 100vw/18*@i;}
-      .padding-right-@{querie}-@{i} { padding-right: 100vw/18*@i; }
+      .padding-left-@{querie}-@{i} { padding-left: 100vw/@amount-modular-grid-col*@i;}
+      .padding-right-@{querie}-@{i} { padding-right: 100vw/@amount-modular-grid-col*@i; }
 
       .loop-grid-col(@i - 1);
     }
@@ -28,15 +28,15 @@
 
     .loop-grid-row (@i) when (@i > 0) {
 
-      .row-@{querie}-@{i} { height: 100vh/9*@i; }
-      .top-@{querie}-@{i} { top: 100vh/9*@i; }
-      .bottom-@{querie}-@{i} { bottom: 100vh/9*@i; }
+      .row-@{querie}-@{i} { height: 100vh/@amount-modular-grid-row*@i; }
+      .top-@{querie}-@{i} { top: 100vh/@amount-modular-grid-row*@i; }
+      .bottom-@{querie}-@{i} { bottom: 100vh/@amount-modular-grid-row*@i; }
 
-      .margin-top-@{querie}-@{i} { margin-top: 100vh/9*@i;}
-      .margin-bottom-@{querie}-@{i} { margin-bottom: 100vh/9*@i;}
+      .margin-top-@{querie}-@{i} { margin-top: 100vh/@amount-modular-grid-row*@i;}
+      .margin-bottom-@{querie}-@{i} { margin-bottom: 100vh/@amount-modular-grid-row*@i;}
 
-      .padding-top-@{querie}-@{i} { padding-top: 100vh/9*@i;}
-      .padding-bottom-@{querie}-@{i} { padding-bottom: 100vh/9*@i; }
+      .padding-top-@{querie}-@{i} { padding-top: 100vh/@amount-modular-grid-row*@i;}
+      .padding-bottom-@{querie}-@{i} { padding-bottom: 100vh/@amount-modular-grid-row*@i; }
 
       .loop-grid-row(@i - 1);
     }

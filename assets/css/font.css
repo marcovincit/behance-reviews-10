@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Behance 250';
+  src: url('../fonts/Behance-250.eot');
+  src: url('../fonts/Behance-250.woff2') format('woff2'),
+       url('../fonts/Behance-250.woff') format('woff'),
+       url('../fonts/Behance-250.ttf') format('truetype'),
+       url('../fonts/Behance-250.svg#Behance-ExtraLight') format('svg'),
+       url('../fonts/Behance-250.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Behance 275';
+  src: url('../fonts/Behance-275.eot');
+  src: url('../fonts/Behance-275.woff2') format('woff2'),
+       url('../fonts/Behance-275.woff') format('woff'),
+       url('../fonts/Behance-275.ttf') format('truetype'),
+       url('../fonts/Behance-275.svg#Behance-ExtraLight') format('svg'),
+       url('../fonts/Behance-275.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Behance 400';
+  src: url('../fonts/Behance-400.eot');
+  src: url('../fonts/Behance-400.woff2') format('woff2'),
+       url('../fonts/Behance-400.woff') format('woff'),
+       url('../fonts/Behance-400.ttf') format('truetype'),
+       url('../fonts/Behance-400.svg#Behance-Regular') format('svg'),
+       url('../fonts/Behance-400.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Behance 700';
+  src: url('../fonts/Behance-700.eot');
+  src: url('../fonts/Behance-700.woff2') format('woff2'),
+       url('../fonts/Behance-700.woff') format('woff'),
+       url('../fonts/Behance-700.ttf') format('truetype'),
+       url('../fonts/Behance-700.svg#Behance-Bold') format('svg'),
+       url('../fonts/Behance-700.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: 'Behance ExtraCondensed';
+  src: url('../fonts/BehanceExtraCond-600.eot');
+  src: url('../fonts/BehanceExtraCond-600.woff2') format('woff2'),
+       url('../fonts/BehanceExtraCond-600.woff') format('woff'),
+       url('../fonts/BehanceExtraCond-600.ttf') format('truetype'),
+       url('../fonts/BehanceExtraCond-600.svg#BehanceExtraCond-Semibold') format('svg'),
+       url('../fonts/BehanceExtraCond-600.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
