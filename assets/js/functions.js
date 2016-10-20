@@ -1,37 +1,37 @@
 $(document).ready(function() {
 	////load animations
 
-    var stade = $('#random-limit'),
-        stadeWidth = stade.width();
-        stadeHeight = stade.height();
+    // var stade = $('#random-limit'),
+    //     stadeWidth = stade.width();
+    //     stadeHeight = stade.height();
 
 
-    function randomize() {
-        $('.random').each(function () {
-             var random = $(this),
-                 randomWidth = random.width(),
-                 randomHeight = random.height(),
+    // function randomize() {
+    //     $('.random').each(function () {
+    //          var random = $(this),
+    //              randomWidth = random.width(),
+    //              randomHeight = random.height(),
 
-                 randomTop = Math.floor(Math.random() * (stadeWidth-randomWidth)),
-                 randomLeft = Math.floor(Math.random() * (stadeHeight-randomHeight));
+    //              randomTop = Math.floor(Math.random() * (stadeWidth-randomWidth)),
+    //              randomLeft = Math.floor(Math.random() * (stadeHeight-randomHeight));
 
-             random.css({transform: 'translate(' + randomTop + 'px, ' + randomLeft + 'px)'});
-         });
-    }
-
-
-    randomize();
+    //          random.css({transform: 'translate(' + randomTop + 'px, ' + randomLeft + 'px)'});
+    //      });
+    // }
 
 
-    setInterval(function(){
+    // randomize();
 
 
-        randomize();
+    // setInterval(function(){
+
+
+    //     randomize();
 
 
 
 
-    }, 1000);
+    // }, 2000);
 
 
 
@@ -41,23 +41,30 @@ $(document).ready(function() {
 
 	$(window).load(function () {
 
-		var url = window.location.pathname,
-			urlNoBar = url.replace('/', ''),
-			urlID = '#'+urlNoBar;
+		setTimeout(function(){
+		
+
+			$("#load").addClass("out");
+
+			var url = window.location.pathname,
+				urlNoBar = url.replace('/', ''),
+				urlID = '#'+urlNoBar;
 
 
 
-		if(urlNoBar === ''){
+			if(urlNoBar === ''){
 
-			$('#header, #sebrae, #hotmart, #logo a, #graphism, #bg-mask, #menu ul').removeAttr('class').attr('class', 'home');
+				$('#header, #sebrae, #hotmart, #logo span, #graphism, #bg-mask, #menu, #back').removeAttr('class').attr('class', 'home');
 
-		} else {
+			} else {
 
 
-			$(urlID).addClass('in');
-			$('a[href="'+urlNoBar+'"]').addClass('current');
+				$(urlID).addClass('in');
+				$('a[href="'+urlNoBar+'"]').addClass('current');
 
-		};
+			};
+
+		}, 3000);
 
 
 	});
@@ -74,7 +81,7 @@ $(document).ready(function() {
 			link = linkHash.replace('#', '');
 			sectionCurrent = $(".section.in");
 
-		$('#header, #sebrae, #hotmart, #logo a, #graphism, #bg-mask, #menu ul').removeAttr('class').attr('class', link);
+		$('#header, #sebrae, #hotmart, #logo span, #graphism, #bg-mask, #menu, #back').removeAttr('class').attr('class', link);
 
 		sectionCurrent.addClass("out").removeClass("in");
 
@@ -86,6 +93,31 @@ $(document).ready(function() {
 
 
 	});
+
+
+	$('#menu, #logo').hover(function () {
+
+	
+
+		$('#header').addClass("menu");
+		$('#menu').addClass("hover");
+
+
+		$('#'+link).addClass("in").removeClass("out");
+
+
+	}, function () {
+
+	
+
+		$('#header').removeClass("menu");
+		$('#menu').removeClass("hover");
+
+		$('#'+link).addClass("in").removeClass("out");
+
+
+	});
+
 
 
 
@@ -125,7 +157,7 @@ $(document).ready(function() {
 
 
 		$(this).hover(function () {
-			$('.names-list a, .names-list span, .names-list p').addClass('inactive');
+			$('.names-list a, .names-list span, .names-list p span').addClass('inactive');
 
 			$(this).removeClass('inactive');
 
@@ -137,7 +169,7 @@ $(document).ready(function() {
 
 
 		}, function () {
-			$('.names-list a, .names-list span, .names-list p').removeClass('inactive');
+			$('.names-list a, .names-list span, .names-list p span').removeClass('inactive');
 			$('#organizador-photo, #avaliador-photo').removeAttr('class');
 		});
 
@@ -145,53 +177,53 @@ $(document).ready(function() {
 
 
 
-	$('#organizadores').on( "mousemove", function( event ) {
+	// $('#organizadores').on( "mousemove", function( event ) {
 
 
-		if (event.pageX > ($(this).width()/3)*1) {
+	// 	if (event.pageX > ($(this).width()/3)*1) {
 
-			$(this).find('.names-list').css({'transform':'translateX(-10%)'});​
-			$(this).find('p').css({'transform':'translateX(-10%)'});​
-
-
-
-		} else if(event.pageX < ($(this).width()/3)*1) {
-
-			$(this).find('.names-list').css({'transform':'translateX(0%)'});​
-			$(this).find('p').css({'transform':'translateX(0%)'});​
-		};
-
-		if(event.pageX > ($(this).width()/3)*2) {
-
-			$(this).find('.names-list').css({'transform':'translateX(-15%)'});​
-			$(this).find('p').css({'transform':'translateX(-15%)'});​
-
-		} 
-	});
-
-	$('#avaliadores').on( "mousemove", function( event ) {
-
-
-		if (event.pageX > ($(this).width()/3)*1) {
-
-			$(this).find('.names-list').css({'transform':'translateX(-10%)'});​
-			$(this).find('p').css({'transform':'translateX(-10%)'});​
+	// 		$(this).find('.names-list').css({'transform':'translateX(-10%)'});​
+	// 		$(this).find('p').css({'transform':'translateX(-10%)'});​
 
 
 
-		} else if(event.pageX < ($(this).width()/3)*1) {
+	// 	} else if(event.pageX < ($(this).width()/3)*1) {
 
-			$(this).find('.names-list').css({'transform':'translateX(0%)'});​
-			$(this).find('p').css({'transform':'translateX(0%)'});​
-		};
+	// 		$(this).find('.names-list').css({'transform':'translateX(0%)'});​
+	// 		$(this).find('p').css({'transform':'translateX(0%)'});​
+	// 	};
 
-		if(event.pageX > ($(this).width()/3)*2) {
+	// 	if(event.pageX > ($(this).width()/3)*2) {
 
-			$(this).find('.names-list').css({'transform':'translateX(-22%)'});​
-			$(this).find('p').css({'transform':'translateX(-25%)'});​
+	// 		$(this).find('.names-list').css({'transform':'translateX(-15%)'});​
+	// 		$(this).find('p').css({'transform':'translateX(-15%)'});​
 
-		} 
-	});
+	// 	} 
+	// });
+
+	// $('#avaliadores').on( "mousemove", function( event ) {
+
+
+	// 	if (event.pageX > ($(this).width()/3)*1) {
+
+	// 		$(this).find('.names-list').css({'transform':'translateX(-10%)'});​
+	// 		$(this).find('p').css({'transform':'translateX(-10%)'});​
+
+
+
+	// 	} else if(event.pageX < ($(this).width()/3)*1) {
+
+	// 		$(this).find('.names-list').css({'transform':'translateX(0%)'});​
+	// 		$(this).find('p').css({'transform':'translateX(0%)'});​
+	// 	};
+
+	// 	if(event.pageX > ($(this).width()/3)*2) {
+
+	// 		$(this).find('.names-list').css({'transform':'translateX(-22%)'});​
+	// 		$(this).find('p').css({'transform':'translateX(-25%)'});​
+
+	// 	} 
+	// });
 
 
 
@@ -201,17 +233,17 @@ $(document).ready(function() {
 
 		if ( event.pageY < $(this).height()/2 ) {
 
-			$('.programacao-col, #programacao .icon, #logo a, #menu').css({'transform':'translateY(0%)'});​
+			$('.programacao-col, #programacao .icon, #logo span').css({'transform':'translateY(0%)'});​
 			$('#sebrae, #hotmart').css({'transform':'translateY(300%)'});​
 
 		}
 
 
-		if(event.pageY > $(this).width()/2 ) {
+		if(event.pageY > $(this).width()/4 ) {
 
 			$('.programacao-col, #programacao .icon').css({'transform':'translateY(-50%)'});​
-			$('#logo a').css({'transform':'translateY(-400%)'});​
-			$('#menu').css({'transform':'translateY(-400px)'});​
+			$('#logo span').css({'transform':'translateY(-400%)'});​
+			// $('#menu').css({'transform':'translateY(-400px)'});​
 			$('#sebrae, #hotmart').css({'transform':'translateY(0%)'});​
 
 
@@ -223,8 +255,49 @@ $(document).ready(function() {
 
 
 
+});
+
+$.fn.parallaxHorizontal = function ( resistance, mouse ) 
+{
+	$el = $( this );
+	TweenLite.to( $el, .8, 
+	{
+		x : -(( mouse.clientX - (window.innerWidth/2) ) / resistance )
+	});
+
+};
 
 
+$.fn.parallaxVertical = function ( resistance, mouse ) 
+{
+	$el = $( this );
+	TweenLite.to( $el, .8, 
+	{
+		y : -(( mouse.clientY - (window.innerWidth/2) ) / resistance )
+	});
 
+};
+
+$.fn.parallaxCompleto = function ( resistance, mouse ) 
+{
+	$el = $( this );
+	TweenLite.to( $el, .8, 
+	{
+		x : -(( mouse.clientX - (window.innerWidth/2) ) / resistance ),
+		y : -(( mouse.clientY - (window.innerHeight/2) ) / resistance )
+	});
+
+};
+
+$(document).mousemove( function( e ) {
+	$( '#avaliadores .names-list li' ).parallaxHorizontal( 1.6, e );
+	$( '#avaliadores .names-list p' ).parallaxHorizontal( -20, e );
+
+	$( '#organizadores .names-list li' ).parallaxHorizontal( 2, e );
+	$( '#organizadores .names-list p' ).parallaxHorizontal( -10, e );
+
+	$( '.photo-parallax' ).parallaxCompleto( -10, e );
+
+	// $('#programacao-col-01, #programacao-col-02, #programacao-col-03').parallaxVertical(-10, e);
 
 });

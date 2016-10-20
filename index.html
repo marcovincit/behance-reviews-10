@@ -17,7 +17,7 @@
 	<!-- ================ -->
 
 	<title>Behance Portfolio Reviews - Belo Horizonte #10</title>
-	<link rel="icon" href="favicon.svg" type="image/x-icon" />
+	<link rel="icon" href="favicon.png" type="image/x-icon" />
 	<link rel="stylesheet" href="assets/dist/all.min.css">
 
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -31,45 +31,114 @@
 </head>
 <body>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77192825-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 <div id="bg-mask"></div>
 
 
 <section id="load">
 	<h1 id="load-text" class="fixed-xs">
-		Connect & Get Feedback  <br> on Your Creative Work
-		<span> <b></b><b></b><b></b> </span>
+		<div class="load-circle"></div>
+		<div class="load-text-line1"><span>Connect & Get Feedback </span></div>
+		<div class="load-text-line2"><span>on Your Creative Work</span></div>
 	</h1>
 
-	<div id="random-limit">
+<!-- 	<div id="random-limit">
 		<div class="random"></div>
 		<div class="random random-circle"></div>
 		<div class="random random-x"></div>
-	</div>
+	</div> -->
 	
 </section>
 
-<nav id="menu" class="fixed-xs top-xs-5 left-xs-2 col-xs-10 row-xs-1">
-	<ul>
-		<li><a href="#home" data-link="true">Início</a></li>
-		<li><a href="#sobre" data-link="true">Sobre</a></li>
-		<li><a href="#organizadores" data-link="true">Organizadores</a></li>
-		<li><a href="#avaliadores" data-link="true">Avaliadores</a></li>
-		<li><a href="#programacao" data-link="true">Programação</a></li>
-	</ul>
+<div id="back">
+	<a onclick="ga('send', 'event', 'Menu', 'Back', 'Menu');" href="#home" data-link="true" class="fixed-xs top-xs-2 left-xs-1">←</a>
+</div>
+
+<nav id="menu">
+
+	<a href="#menu" id="menu-btn" class="fixed-xs top-xs-2 right-xs-1">
+		<span>—</span>
+		<span>—</span>
+	</a>
+
+
+	<div class="absolute-xs top-xs-5 left-xs-3 col-xs-4">
+
+		<ul>
+			<li><a onclick="ga('send', 'event', 'Menu', 'Início', 'Menu');" href="#home" data-link="true">Início</a></li>
+
+			<li><a onclick="ga('send', 'event', 'Menu', 'Sobre', 'Menu');" href="#sobre" data-link="true">Sobre</a></li>
+			<li><a onclick="ga('send', 'event', 'Menu', 'Programação', 'Menu');" href="#programacao" data-link="true">Programação</a></li>
+
+			<li><a onclick="ga('send', 'event', 'Menu', 'Avaliadores', 'Menu');" href="#avaliadores" data-link="true">Avaliadores</a></li>
+			<li><a onclick="ga('send', 'event', 'Menu', 'Organizadores', 'Menu');" href="#organizadores" data-link="true">Organizadores</a></li>
+
+		</ul>
+
+	</div>
+
+	<div class="absolute-xs top-xs-5 left-xs-7 col-xs-4">
+
+		<ul>
+			<li><a onclick="ga('send', 'event', 'Menu', 'Como Chegar', 'Menu');" href="https://goo.gl/maps/aCbfgJ5DnRy" target="_blank">Como Chegar</a></li>
+			<li><a onclick="ga('send', 'event', 'Menu', 'Contato', 'Menu');" href="mailto:behanceportfolioreviewsbh@gmail.com">Contato</a></li>
+
+			<li><a onclick="ga('send', 'event', 'Menu', 'Inscrições', 'Menu');" href="#home" target="_blank">Inscrições [Em Breve]</a></li>
+
+		</ul>
+
+	</div>
+
+	<div id="social" class="absolute-xs top-xs-5 left-xs-12 col-xs-4">
+		<ul>
+			<li><a onclick="ga('send', 'event', 'Social', 'Facebook', 'Social');" href="https://www.facebook.com/behancereviewsbh/" target="_blank">
+				<svg id="facebook-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M27.1,5.64H1.64A1.64,1.64,0,0,0,0,7.28H0V32.72a1.64,1.64,0,0,0,1.64,1.64h13.7V23.25H11.6V18.89h3.74V15.7A5.19,5.19,0,0,1,20.92,10a30.54,30.54,0,0,1,3.28.15V14H21.91a1.8,1.8,0,0,0-2.13,2.11v2.77h4.28l-0.52,4.36H19.81V34.36H27.1a1.64,1.64,0,0,0,1.64-1.64h0V7.23A1.64,1.64,0,0,0,27.1,5.64Z"></path></svg>
+			</a></li>
+			<li><a onclick="ga('send', 'event', 'Social', 'Behance', 'Social');" href="https://www.behance.net/BehanceBeloHorizonte" target="_blank">
+				<svg id="behance-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M11.68,6.68A13.9,13.9,0,0,1,14.85,7a6.7,6.7,0,0,1,2.46,1.09,5,5,0,0,1,1.6,2,7.63,7.63,0,0,1,.55,3,6,6,0,0,1-.84,3.31,6.13,6.13,0,0,1-2.48,2.15A5.8,5.8,0,0,1,19.48,21a7.68,7.68,0,0,1,1.1,4.13,7.51,7.51,0,0,1-.71,3.44A6.42,6.42,0,0,1,18,31a8,8,0,0,1-2.77,1.36,11.45,11.45,0,0,1-3.17.43H0.19V6.68H11.68ZM11,17.26a3.69,3.69,0,0,0,2.36-.69,2.88,2.88,0,0,0,.91-2.38,3.22,3.22,0,0,0-.31-1.5,2.24,2.24,0,0,0-.84-1,3.2,3.2,0,0,0-1.17-.47,7.34,7.34,0,0,0-1.38-.12h-5v6.11H11ZM11.29,28.4a6.06,6.06,0,0,0,1.5-.17A3.22,3.22,0,0,0,14,27.68a2.65,2.65,0,0,0,.88-1.05,3.69,3.69,0,0,0,.33-1.72A3.55,3.55,0,0,0,14.18,22a4.32,4.32,0,0,0-2.79-.86H5.55v7.22h5.74v0Zm16.95-.09a4.13,4.13,0,0,0,3.13,1.14,4.06,4.06,0,0,0,2.53-.83,3.27,3.27,0,0,0,1.29-1.72h4.27a7.94,7.94,0,0,1-8.25,6.37,9.51,9.51,0,0,1-3.77-.72,8,8,0,0,1-2.84-2,9.4,9.4,0,0,1-1.72-3.15,12.62,12.62,0,0,1-.71-3.91,11.87,11.87,0,0,1,.65-4,9.59,9.59,0,0,1,1.84-3.17,8.9,8.9,0,0,1,2.86-2.12,8.61,8.61,0,0,1,3.69-.78,7.79,7.79,0,0,1,3.91.95,8,8,0,0,1,2.76,2.5,10.42,10.42,0,0,1,1.55,3.6,14.24,14.24,0,0,1,.34,4.22H27a5.61,5.61,0,0,0,1.19,3.69h0V28.31Zm5.55-10A3.44,3.44,0,0,0,31,17.22a3.7,3.7,0,0,0-3.15,1.48A4.15,4.15,0,0,0,27.22,20,6.15,6.15,0,0,0,27,21.29h7.87a5.17,5.17,0,0,0-1.1-3h0ZM26,8.37V11h9.87V8.37H26Z"></path></svg>
+			</a></li>
+
+			<!-- <li></li> -->
+		</ul>
+	</div>
+
+	<div class="absolute-xs top-xs-6 left-xs-12 col-xs-4">
+		<ul>
+			
+			<li>#behancereviews</li>
+			<li>#behancereviewsbh</li>
+
+		</ul>
+	</div>
+
+
 	
 </nav>
 
-<header id="header" class="home">
-	<h1 id="logo" class="fixed-xs top-xs-2 left-xs-7 col-xs-4"><a href="#home" data-link="true">Bēhance Portfolio Reviews <br> Belo Horizonte #10</a></h1>
+<header id="header">
+	<h1 id="logo" class="fixed-xs top-xs-2 left-xs-7 col-xs-4">
+		<div class="logo-line1"><span>Bēhance Portfolio Reviews</span></div>
+		<div class="logo-line2"><span>Belo Horizonte #10</span></div>
+	</h1>
 	<div id="dateandtime" class="fixed-xs">
-		<a href="#programacao" data-link="true">
+		<a onclick="ga('send', 'event', 'Link Texto', 'Programação', 'Link Texto');" href="#programacao" data-link="true">
 			<p id="date"><b>29 OUT, 2016 </b></p>
 			<p id="time">9:00 — 18:00</p>
 		</a>
 
 	</div>
 	<div id="location" class="fixed-xs">
-		<a href="https://goo.gl/maps/aCbfgJ5DnRy" target="_blank">
+		<a onclick="ga('send', 'event', 'Link Texto', 'Local', 'Link Texto');" href="https://goo.gl/maps/aCbfgJ5DnRy" target="_blank">
 			<p><b class="line1">Sebrae MG</b></p>
 			<p>
 				<span class="line2">Av. Barão Homem de Melo, 329</span>
@@ -160,10 +229,15 @@
 
 
 <section id="sobre" class="section">
-	<div id="sobre-texto" class="fixed-xs top-xs-7 left-xs-11 col-xs-5">
+
+
+	<div id="sobre-texto" class="fixed-xs top-xs-7 right-xs-4 col-xs-4">
 		<p>Duas vezes ao ano, o Behance apresenta o Portfolio Reviews, uma série de eventos  sem precedentes organizados por voluntários que se espalhou por centenas de cidades a nível internacional, com o objetivo de reunir profissionais criativos. O Behance Portfolio Reviews se torna um importante momento em que trazemos a comunidade online para o mundo offline, com um encontro para compartilhar conhecimento, receber feedback dos avaliadores convidados e aumentar a visibilidade da comunidade criativa local.</p>
 	</div>
 	<p id="ano">2016</p>
+
+	<div id="sobre-foto"  class="fixed-xs top-xs-0 left-xs-0 col-xs-9 row-xs-19"></div>
+
 </section>
 
 
@@ -173,35 +247,39 @@
 
 	<div id="organizador-photo">
 
-		<svg class="icon absolute-xs bottom-xs-2 left-xs-5 col-xs-8"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 723.53 727.91">
+		<div id="organizador-photo-parallax" class="photo-parallax absolute-xs bottom-xs-1 col-xs-8 row-xs-18">
 
-				<path id="like-icon-2" transform="translate(54.37 73.68)" d="M0,231H115.44V539H0ZM258.09,527.72c7.43,7.36,16.35,11.17,26,11.28H442.5a38.39,38.39,0,0,0,27.24-11.28l96.2-96.25a40.09,40.09,0,0,0,11.28-27.22V269.5A38.41,38.41,0,0,0,538.74,231H346.33l57.72-96.25S423.29,104.26,423.29,77V38.5A38.46,38.46,0,0,0,384.81,0L346.33,77,192.41,231V462Z"/>
+			<svg class="icon"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 723.53 727.91">
 
-		</svg>
+					<path id="like-icon-2" transform="translate(54.37 73.68)" d="M0,231H115.44V539H0ZM258.09,527.72c7.43,7.36,16.35,11.17,26,11.28H442.5a38.39,38.39,0,0,0,27.24-11.28l96.2-96.25a40.09,40.09,0,0,0,11.28-27.22V269.5A38.41,38.41,0,0,0,538.74,231H346.33l57.72-96.25S423.29,104.26,423.29,77V38.5A38.46,38.46,0,0,0,384.81,0L346.33,77,192.41,231V462Z"/>
 
-		<svg id="icon-organizadores" class="icon absolute-xs bottom-xs-2 left-xs-5 col-xs-8"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 723.53 727.91">
+			</svg>
 
-			<clipPath id="clip-path-organizadores" transform="translate(54.37 73.68)">
-				<path id="like-icon" d="M0,231H115.44V539H0ZM258.09,527.72c7.43,7.36,16.35,11.17,26,11.28H442.5a38.39,38.39,0,0,0,27.24-11.28l96.2-96.25a40.09,40.09,0,0,0,11.28-27.22V269.5A38.41,38.41,0,0,0,538.74,231H346.33l57.72-96.25S423.29,104.26,423.29,77V38.5A38.46,38.46,0,0,0,384.81,0L346.33,77,192.41,231V462Z"/>
-			</clipPath>
+			<svg id="icon-organizadores"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 723.53 727.91">
 
-			<g id="marco"><image width="661" height="665" transform="scale(1.09)" xlink:href="assets/img/organizadores/marco.jpg"/></g>
-			<g id="milena"><image width="661" height="665" transform="scale(1.09)" xlink:href="assets/img/organizadores/milena.jpg"/></g>
-			<g id="paula"><image width="661" height="665" transform="scale(1.09)" xlink:href="assets/img/organizadores/paula.jpg"/></g>
-			<g id="will"><image width="661" height="665" transform="scale(1.09)" xlink:href="assets/img/organizadores/will.jpg"/></g>
+				<clipPath id="clip-path-organizadores" transform="translate(54.37 73.68)">
+					<path id="like-icon" d="M0,231H115.44V539H0ZM258.09,527.72c7.43,7.36,16.35,11.17,26,11.28H442.5a38.39,38.39,0,0,0,27.24-11.28l96.2-96.25a40.09,40.09,0,0,0,11.28-27.22V269.5A38.41,38.41,0,0,0,538.74,231H346.33l57.72-96.25S423.29,104.26,423.29,77V38.5A38.46,38.46,0,0,0,384.81,0L346.33,77,192.41,231V462Z"/>
+				</clipPath>
 
-		</svg>
+				<g id="marco"><image width="700" height="700" xlink:href="assets/img/organizadores/marco.jpg"/></g>
+				<g id="milena"><image width="700" height="700" xlink:href="assets/img/organizadores/milena.jpg"/></g>
+				<g id="paula"><image width="700" height="700" xlink:href="assets/img/organizadores/paula.jpg"/></g>
+				<g id="will"><image width="700" height="700" xlink:href="assets/img/organizadores/will.jpg"/></g>
+
+			</svg>
+
+		</div>	
 
 	</div>
 
 	<div class="names-list absolute-xs bottom-xs-6 left-xs-2">
-	<p> Uma equipe determinada a fazer este dia incrível e com muita troca de conhecimento. Conheça quem faz acontecer o Behance Reviews 2016.</p>
+	<p> <span>Uma equipe determinada a fazer este dia incrível e com muita troca de conhecimento. Conheça quem faz acontecer o Behance Reviews #10.</span></p>
 		<ul>
 			<li><span>Organizadores</span></li>
-			<li><a href="#marco" data-name="marco">Marco Vincit</a></li>
-			<li><a href="#milena" data-name="milena">Milena Thomazella</a></li>
-			<li><a href="#paula" data-name="paula">Paula Faria</a></li>
-			<li><a href="#will" data-name="will">Will Siqueira</a></li>			
+			<li><a onclick="ga('send', 'event', 'Organizador', 'Marco', 'Organizador');" target="_blank" href="https://www.behance.net/marcovincit" data-name="marco">Marco Vincit</a></li>
+			<li><a onclick="ga('send', 'event', 'Organizador', 'Milena', 'Organizador');" target="_blank" href="https://www.behance.net/mithomazella" data-name="milena">Milena Thomazella</a></li>
+			<li><a onclick="ga('send', 'event', 'Organizador', 'Paula', 'Organizador');" target="_blank" href="https://br.linkedin.com/in/paulasfaria" data-name="paula">Paula Faria</a></li>
+			<li><a onclick="ga('send', 'event', 'Organizador', 'Will', 'Organizador');" target="_blank" href="https://www.behance.net/willsiqueira" data-name="will">Will Siqueira</a></li>			
 		</ul>
 	</div>
 
@@ -212,35 +290,38 @@
 
 	<div id="avaliador-photo">
 
-		<svg class="icon absolute-xs bottom-xs-2 left-xs-5 col-xs-8"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 960">
+		<div id="avaliador-photo-parallax" class="photo-parallax absolute-xs bottom-xs-1 left-xs-5 col-xs-8 row-xs-18">
+			<svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 960">
 			<path d="M480,190.91C190.91,190.91,17.45,480,17.45,480S190.91,769.09,480,769.09,942.55,480,942.55,480,769.09,190.91,480,190.91Zm0,404.73A115.64,115.64,0,1,1,595.64,480,115.64,115.64,0,0,1,480,595.64Z"></path>
-		</svg>
+			</svg>
 
-		<svg id="icon-avaliadores" class="absolute-xs bottom-xs-2 left-xs-5 col-xs-8"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 960">
+			<svg id="icon-avaliadores"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 960">
 
-			<clipPath id="clip-path-avaliadores">
-				<path d="M480,190.91C190.91,190.91,17.45,480,17.45,480S190.91,769.09,480,769.09,942.55,480,942.55,480,769.09,190.91,480,190.91Zm0,404.73A115.64,115.64,0,1,1,595.64,480,115.64,115.64,0,0,1,480,595.64Z"></path>
-			</clipPath>
+				<clipPath id="clip-path-avaliadores">
+					<path d="M480,190.91C190.91,190.91,17.45,480,17.45,480S190.91,769.09,480,769.09,942.55,480,942.55,480,769.09,190.91,480,190.91Zm0,404.73A115.64,115.64,0,1,1,595.64,480,115.64,115.64,0,0,1,480,595.64Z"></path>
+				</clipPath>
 
-			<g id="andresa"><image width="960" height="960" transform="scale(1.09)" xlink:href="assets/img/avaliadores/andresa.jpg"/></g>
-			<g id="caio"><image width="960" height="960" transform="scale(1.09)" xlink:href="assets/img/avaliadores/caio.jpg"/></g>
-			<g id="gustavo"><image width="960" height="960" transform="scale(1.09)" xlink:href="assets/img/avaliadores/gustavo.jpg"/></g>
-			<g id="marlos"><image width="960" height="960" transform="scale(1.09)" xlink:href="assets/img/avaliadores/marlos.jpg"/></g>
-			<g id="rafael"><image width="960" height="960" transform="scale(1.09)" xlink:href="assets/img/avaliadores/rafael.jpg"/></g>
+				<g id="andresa"><image width="960" height="960" xlink:href="assets/img/avaliadores/andresa.jpg"/></g>
+				<g id="gustavo"><image width="960" height="960" xlink:href="assets/img/avaliadores/gustavo.jpg"/></g>
+				<g id="marlos"><image width="960" height="960" xlink:href="assets/img/avaliadores/marlos.jpg"/></g>
+				<g id="rafael"><image width="960" height="960" xlink:href="assets/img/avaliadores/rafael.jpg"/></g>
+				<g id="rafael-righi"><image width="960" height="960" xlink:href="assets/img/avaliadores/rafael-righi.jpg"/></g>
 
-		</svg>
+			</svg>
+
+		</div>
 
 	</div>
 
-	<div class="names-list absolute-xs bottom-xs-6 left-xs-2">
-	<p> Prepare seu portfólio. Grandes profissionais e referências no mercado estarão reunidos para avaliar seu trabalho. </p>
+	<div class="names-list absolute-xs bottom-xs-6 left-xs-0">
+	<p> <span>Prepare seu portfólio. Grandes profissionais estarão reunidos para avaliar seu trabalho.</span> </p>
 		<ul>
 			<li><span>Avaliadores</span></li>
-			<li><a target="_blank" href="#andresa" data-name="andresa">Andresa de Carvalho</a></li>
-			<li><a target="_blank" href="#caio" data-name="caio">Caio Calado</a></li>
-			<li><a target="_blank" href="#gustavo" data-name="gustavo">Gustavo Greco</a></li>
-			<li><a target="_blank" href="#marlos" data-name="marlos">Marlos Carmo</a></li>	
-			<li><a target="_blank" href="#rafael" data-name="rafael">Rafael Maia</a></li>			
+			<li><a onclick="ga('send', 'event', 'Organizador', 'Andresa', 'Avaliador');" target="_blank" href="#andresa" data-name="andresa">Andresa de Carvalho</a></li>
+			<li><a onclick="ga('send', 'event', 'Organizador', 'Greco', 'Avaliador');" target="_blank" href="http://www.grecodesign.com.br/" data-name="gustavo">Gustavo Greco</a></li>
+			<li><a onclick="ga('send', 'event', 'Organizador', 'Marlos', 'Avaliador');" target="_blank" href="#marlos" data-name="marlos">Marlos Carmo</a></li>	
+			<li><a onclick="ga('send', 'event', 'Organizador', 'Rafael Maia', 'Avaliador');" target="_blank" href="http://rafael-maia.com/" data-name="rafael">Rafael Maia</a></li>
+			<li><a onclick="ga('send', 'event', 'Organizador', 'Rafa Righi', 'Avaliador');" target="_blank" href="#" data-name="rafael-righi">Rafa Righi</a></li>		
 		</ul>
 	</div>
 
@@ -298,76 +379,47 @@
 
 
 
-<footer id="footer" class="fixed-xs bottom-xs-1 left-xs-8 col-xs-2">
+<footer id="footer" class="fixed-xs bottom-xs-1 left-xs-7 col-xs-4">
 	<div id="sebrae">
 		<p>Apoio</p>
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			 viewBox="0 0 82 82" style="enable-background:new 0 0 82 82;" xml:space="preserve">
-
-			<path d="M45.6,61.9C41.2,62,38,64.8,37,69.2c-0.9,4.4,1.1,7.2,5.5,7.3c3.4,0.1,4.1-0.3,7.3-0.8l1.6-7.5h-6.8L44.1,71h2.9l-0.5,2.6
-				c-0.6,0.1-1.3,0.2-2.1,0.2c-2.8,0-3.8-1.8-3.2-4.6c0.5-2.3,1.9-4.6,4.5-4.6c1.3,0,2.3,0.4,2.2,1.8h3.9
-				C52.5,62.3,49.1,61.8,45.6,61.9z"/>
-			<polygon points="30.9,62.2 26.7,71.7 26.6,71.7 26.4,62.2 20.2,62.2 17.2,76.2 20.6,76.2 23.1,64.4 23.2,64.3 23.7,76.2 27.3,76.2 
-				33.1,64.4 33.1,64.5 30.6,76.2 34,76.2 37,62.2 	"/>
-			<path d="M32.2,44.3c0.1,0,5.3,0.3,6.2-3.8c0.4-2-0.8-3.2-2.7-3.4l0,0c1.6-0.3,3.3-1.3,3.7-3.1c0.5-2.5-1.4-3.7-4.1-3.7h-6.7l-3,14
-				H32.2z M31.9,32.9h2.1c0.9,0,1.5,0.6,1.3,1.4c-0.2,1.1-1,1.5-2,1.5l-2,0L31.9,32.9z M30.8,38.5h2.6c0.9,0,1.2,0.8,1.1,1.6
-				c-0.2,0.9-1,1.5-2,1.5h-2.3L30.8,38.5z"/>
-			<path d="M53.3,33.8c0.6-3-2.3-3.6-4.7-3.6h-6.5l-3,14H43l1.2-5.4h1.5c2,0,1.9,0.7,1.7,2.4c-0.1,1-0.2,2-0.2,3h4.2
-				c-0.1-1.1,0-2.2,0.1-3.4c0.2-2.2,0-3.4-2.5-3.5l0-0.1C51,37,52.9,35.9,53.3,33.8z M46.3,36.2h-1.5l0.7-3.2H47
-				c1.2,0,2.4,0.2,2.1,1.6C48.8,36,47.5,36.2,46.3,36.2z"/>
-			<path d="M60,30.2l-8.5,14h3.9l1.5-2.7h5.7l0.4,2.7h4.4l-2.6-14H60z M58.4,38.8l3.1-5.8h0.1l0.6,5.8H58.4z"/>
-			<polygon points="81.3,32.9 81.9,30.2 71.1,30.2 68.2,44.3 78.9,44.3 79.5,41.5 72.6,41.5 73.3,38.6 79.6,38.6 80.1,35.8 73.9,35.8 
-				74.5,32.9 	"/>
-			<path d="M7.8,35.6c-1-0.3-2.1-0.6-1.9-1.6c0.2-0.7,1.1-1.3,1.9-1.3c0.7,0,1.1,0.2,1.4,0.4c0.3,0.3,0.4,0.7,0.2,1.2h3.9
-				c1-3.4-1.8-4.4-4.7-4.4c-2.9,0-6.1,0.9-6.9,4.2c-0.4,1.5,0.1,2.8,1.4,3.4c2.8,1.3,5.8,0.9,5.3,2.8c-0.2,0.9-1.4,1.4-2.3,1.4
-				c-1.4,0-2.2-0.7-1.9-2H0.3c-0.8,3.8,1.9,4.8,5.2,4.8c3.3,0,6.5-1.4,7.1-4.4C13.4,36.4,10,36.2,7.8,35.6z"/>
-			<polygon points="24.4,41.5 17.6,41.5 18.2,38.6 24.5,38.6 25.1,35.8 18.8,35.8 19.4,32.9 26.2,32.9 26.8,30.2 16.1,30.2 13.1,44.3 
-				23.8,44.3 	"/>
-			<polygon points="57.1,14.9 31.5,14.9 30.5,19.8 56.1,19.8 	"/>
-			<polygon points="50.5,46.3 25,46.3 24,51.2 49.5,51.2 	"/>
-			<polygon points="55.7,22.5 30.1,22.5 29.1,27.5 54.8,27.5 	"/>
-			<polygon points="22.6,58.9 48.2,58.9 49.1,53.9 23.6,53.9 	"/>
-		</svg>
+		<a onclick="ga('send', 'event', 'Apoio', 'Sebrae', 'Apoio');" title="Sebrae MG" target="_blank" href="http://www.sebrae.com.br/sites/PortalSebrae/ufs/mg?codUf=14">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.5 82">
+				<path d="M42,56.12c.12,0,6.42.36,7.52-4.61.48-2.42-1-3.88-3.27-4.12h0c1.94-.36,4-1.58,4.49-3.76.61-3-1.7-4.49-5-4.49H37.68L34,56.12ZM41.68,42.3h2.55c1.09,0,1.82.73,1.58,1.7a2.17,2.17,0,0,1-2.42,1.82H41Zm-1.33,6.79H43.5c1.09,0,1.45,1,1.33,1.94a2.38,2.38,0,0,1-2.42,1.82H39.62Z"/>
+				<path d="M67.63,43.39c.73-3.64-2.79-4.36-5.7-4.36H54L50.41,56h4.73l1.45-6.55h1.82c2.42,0,2.3.85,2.06,2.91-.12,1.21-.24,2.42-.24,3.64h5.09a23.77,23.77,0,0,1,.12-4.12c.24-2.67,0-4.12-3-4.24v-.12C64.84,47.27,67.14,45.94,67.63,43.39ZM59.14,46.3H57.32l.85-3.88H60c1.45,0,2.91.24,2.55,1.94S60.59,46.3,59.14,46.3Z"/>
+				<path d="M75.75,39,65.44,56h4.73L72,52.73H78.9L79.38,56h5.33L81.57,39ZM73.81,49.46l3.76-7h.12l.73,7Z"/>
+				<polygon points="101.57 42.3 102.3 39.03 89.2 39.03 85.69 56.12 98.66 56.12 99.39 52.73 91.02 52.73 91.87 49.21 99.51 49.21 100.11 45.82 92.6 45.82 93.33 42.3 101.57 42.3"/>
+				<path d="M12.47,45.58c-1.21-.36-2.55-.73-2.3-1.94a2.54,2.54,0,0,1,2.3-1.58,2.83,2.83,0,0,1,1.7.48A1.25,1.25,0,0,1,14.41,44h4.73c1.21-4.12-2.18-5.33-5.7-5.33S6,39.76,5.07,43.76a3.29,3.29,0,0,0,1.7,4.12c3.39,1.58,7,1.09,6.42,3.39C13,52.37,11.5,53,10.41,53c-1.7,0-2.67-.85-2.3-2.42H3.38c-1,4.61,2.3,5.82,6.3,5.82s7.88-1.7,8.61-5.33C19.26,46.55,15.13,46.3,12.47,45.58Z"/>
+				<polygon points="32.59 52.73 24.35 52.73 25.07 49.21 32.71 49.21 33.44 45.82 25.8 45.82 26.53 42.3 34.77 42.3 35.5 39.03 22.53 39.03 18.89 56.12 31.86 56.12 32.59 52.73"/>
+				<polygon points="72.23 20.48 41.2 20.48 39.99 26.42 71.02 26.42 72.23 20.48"/>
+				<polygon points="64.23 58.55 33.32 58.55 32.11 64.49 63.02 64.49 64.23 58.55"/>
+				<polygon points="70.53 29.7 39.5 29.7 38.29 35.76 69.44 35.76 70.53 29.7"/>
+				<polygon points="30.41 73.82 61.44 73.82 62.53 67.76 31.62 67.76 30.41 73.82"/>
+			</svg>
+		</a>
 	</div>
 	
 	<div id="hotmart">
 		<p>Patrocínio</p>
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			 viewBox="0 0 82 82" style="enable-background:new 0 0 82 82;" xml:space="preserve">
 
-			<path d="M23.4,70c-0.7,0-1.4,0.3-1.8,0.8h0v-3.1c0,0,0-0.1-0.1-0.1h-1.7c0,0-0.1,0-0.1,0.1v8.6c0,0,0,0.1,0.1,0.1h1.7
-				c0.1,0,0.1,0,0.1-0.1v-4c0-0.6,0.6-0.8,0.9-0.8c0.3,0,0.8,0.1,0.8,0.6v4.2c0,0,0,0.1,0.1,0.1h1.7c0,0,0.1,0,0.1-0.1V72
-				C25.2,70.8,24.7,70,23.4,70z"/>
-			<path d="M36.2,70.1h-1.3v-1.7c0,0,0-0.1-0.1-0.1h-0.9c0,0-0.1,0-0.1,0.1c0,0-0.5,1.7-0.5,1.7s-1,0.3-1,0.3c0,0-0.1,0-0.1,0.1v1.1
-				c0,0,0,0.1,0.1,0.1H33v3c0,1.1,0.5,1.9,1.9,1.9c0.5,0,0.8-0.1,1.3-0.3c0,0,0.1,0,0.1-0.1V75c0,0,0-0.1-0.1-0.1h-0.8
-				c-0.4,0-0.6-0.2-0.6-0.5v-2.8h1.3c0,0,0.1,0,0.1-0.1L36.2,70.1C36.3,70.1,36.2,70.1,36.2,70.1z"/>
-			<path d="M62.2,71.6C62.2,71.6,62.2,71.6,62.2,71.6l0.1-1.4c0-0.1,0-0.1-0.1-0.1h-1.3v-1.7c0,0,0-0.1-0.1-0.1h-0.9
-				c0,0-0.1,0-0.1,0.1c0,0-0.5,1.7-0.5,1.7s-1,0.3-1,0.3c0,0-0.1,0-0.1,0.1v1.1c0,0,0,0.1,0.1,0.1H59v3c0,1.1,0.5,1.9,1.9,1.9
-				c0.5,0,0.8-0.1,1.3-0.3c0,0,0.1,0,0.1-0.1V75c0,0,0-0.1-0.1-0.1h-0.8c-0.4,0-0.6-0.2-0.6-0.5v-2.8H62.2z"/>
-			<path d="M44.6,70c-0.7,0-1.5,0.3-2,1h0c-0.2-0.6-0.7-1-1.6-1c-0.7,0-1.4,0.3-1.8,0.8h0c0,0-0.2-0.6-0.2-0.6c0,0,0-0.1-0.1-0.1h-1.5
-				c0,0-0.1,0-0.1,0.1v6.1c0,0,0,0.1,0.1,0.1h1.7c0.1,0,0.1,0,0.1-0.1v-4c0-0.6,0.6-0.9,0.9-0.9c0.4,0,0.8,0.2,0.8,0.7v4.1
-				c0,0,0,0.1,0.1,0.1h1.7c0,0,0.1,0,0.1-0.1v-4c0-0.6,0.6-0.8,1-0.8c0.3,0,0.8,0.2,0.8,0.7v4.1c0,0,0,0.1,0.1,0.1h1.7
-				c0,0,0.1,0,0.1-0.1V72C46.3,70.8,45.9,70,44.6,70z"/>
-			<path d="M49.9,70c-0.8,0-1.6,0.1-2.4,0.3c0,0-0.1,0-0.1,0.1v1.1c0,0,0,0.1,0.1,0.1c0,0,0.7,0,1.3,0c1.5,0,1.8,0.1,1.8,0.6v0.4h-1.5
-				c-0.9,0-2.1,0.3-2.1,2c0,1.1,0.6,2,1.8,2c0.7,0,1.3-0.2,1.7-0.7c0,0.1,0.2,0.5,0.2,0.6c0,0,0,0.1,0.1,0.1h1.6c0,0,0.1,0,0.1-0.1
-				v-4.2C52.5,70.4,51.5,70,49.9,70z M50.7,74.2c0,0.8-0.6,1-1,1c-0.4,0-0.9-0.1-0.9-0.7c0-0.6,0.3-0.8,0.9-0.8h1V74.2z"/>
-			<path d="M57.3,70c-0.7,0-1.5,0.3-1.9,1.1h0c0,0-0.2-0.9-0.2-1c0,0,0-0.1-0.1-0.1h-1.5c0,0-0.1,0-0.1,0.1v6.1c0,0,0,0.1,0.1,0.1h1.7
-				c0,0,0.1,0,0.1-0.1v-3.4c0-0.6,0.4-1,1.5-1h0.4c0,0,0.1,0,0.1-0.1L57.3,70C57.4,70,57.3,70,57.3,70z"/>
-			<path d="M28.9,70c-2.2,0-3,1.3-3,3.3c0,2,0.8,3.3,3,3.3c2.2,0,3-1.3,3-3.3C31.9,71.3,31.2,70,28.9,70z M28.9,75c-0.9,0-1-0.7-1-1.7
-				c0-1.1,0.2-1.7,1-1.7c0.9,0,1,0.7,1,1.7C30,74.3,29.8,75,28.9,75z"/>
-			<path d="M40.8,63.4c11.6,0.1,21.1-9.2,21.2-20.8c0-0.1,0-0.1,0-0.2c0.3-5.2-1.5-13.6-5.9-20.5c-0.1-0.2-0.3-0.1-0.3,0.1
-				c0.3,1.1,0.4,3-1.3,2.8c-3-0.2,0.1-6.5-6.4-11c-0.1-0.1-0.3,0-0.2,0.2c0.4,0.8,0.7,3.5-0.3,4.4c-0.8,0.7-2.4,0.5-3.8-1.9
-				c-2.4-4-1.5-8.2,0.1-10.9c0.1-0.2,0-0.3-0.2-0.2c-9,3-10.8,13.5-12.7,17.4c-0.3,0.6-0.6,1-1.1,0.9c-1.6-0.1-0.5-3.6,0.1-4.8
-				c0.1-0.2-0.1-0.3-0.2-0.2c-4.6,4.8-8.8,13-9.6,20.7c0-0.2-0.1,0.6-0.1,1.2c0,0,0,0,0,0c0,0.2,0,0.5,0,0.7c0,0.3,0,0.6,0,0.8
-				C19.9,53.9,29.2,63.3,40.8,63.4z M41.1,32.7c5.4,0,9.7,4.4,9.7,9.8c0,5.4-4.4,9.7-9.8,9.6c-5.4,0-9.7-4.4-9.7-9.8
-				C31.3,37,35.7,32.7,41.1,32.7z"/>
-		</svg>
+		<a onclick="ga('send', 'event', 'Apoio', 'Hotmart', 'Apoio');" title="hotmart" target="_blank"  href="https://www.hotmart.com/">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.5 82">
+				<path d="M35.15,70a2.34,2.34,0,0,0-1.8.8h0v-3.1a.1.1,0,0,0-.1-.1h-1.7a.1.1,0,0,0-.1.1v8.6a.1.1,0,0,0,.1.1h1.7c.1,0,.1,0,.1-.1v-4a.86.86,0,0,1,.9-.8c.3,0,.8.1.8.6v4.2a.1.1,0,0,0,.1.1h1.7a.1.1,0,0,0,.1-.1V72C37,70.82,36.45,70,35.15,70Z"/>
+				<path d="M48,70.12h-1.3v-1.7a.1.1,0,0,0-.1-.1h-.9a.1.1,0,0,0-.1.1l-.5,1.7-1,.3a.1.1,0,0,0-.1.1v1.1a.1.1,0,0,0,.1.1h.7v3a1.69,1.69,0,0,0,1.9,1.9,3.08,3.08,0,0,0,1.3-.3.1.1,0,0,0,.1-.1V75a.1.1,0,0,0-.1-.1h-.8c-.4,0-.6-.2-.6-.5v-2.8h1.3a.1.1,0,0,0,.1-.1v-1.4Z"/>
+				<path d="M74,71.62h0l.1-1.4c0-.1,0-.1-.1-.1h-1.3v-1.7a.1.1,0,0,0-.1-.1h-.9a.1.1,0,0,0-.1.1l-.5,1.7-1,.3a.1.1,0,0,0-.1.1v1.1a.1.1,0,0,0,.1.1h.7v3a1.69,1.69,0,0,0,1.9,1.9,3.08,3.08,0,0,0,1.3-.3.1.1,0,0,0,.1-.1V75a.1.1,0,0,0-.1-.1h-.8c-.4,0-.6-.2-.6-.5v-2.8Z"/>
+				<path d="M56.35,70a2.46,2.46,0,0,0-2,1h0a1.5,1.5,0,0,0-1.6-1,2.34,2.34,0,0,0-1.8.8h0l-.2-.6a.1.1,0,0,0-.1-.1h-1.5a.1.1,0,0,0-.1.1v6.1a.1.1,0,0,0,.1.1h1.7c.1,0,.1,0,.1-.1v-4a1,1,0,0,1,.9-.9.71.71,0,0,1,.8.7v4.1a.1.1,0,0,0,.1.1h1.7a.1.1,0,0,0,.1-.1v-4c0-.6.6-.8,1-.8a.76.76,0,0,1,.8.7v4.1a.1.1,0,0,0,.1.1h1.7a.1.1,0,0,0,.1-.1V72C58.05,70.82,57.65,70,56.35,70Z"/>
+				<path d="M61.65,70a9.86,9.86,0,0,0-2.4.3.1.1,0,0,0-.1.1v1.1a.1.1,0,0,0,.1.1h1.3c1.5,0,1.8.1,1.8.6v.4h-1.5a1.84,1.84,0,0,0-2.1,2,1.79,1.79,0,0,0,1.8,2,2.06,2.06,0,0,0,1.7-.7c0,.1.2.5.2.6a.1.1,0,0,0,.1.1h1.6a.1.1,0,0,0,.1-.1v-4.2C64.25,70.42,63.25,70,61.65,70Zm.8,4.2a.93.93,0,0,1-1,1c-.4,0-.9-.1-.9-.7s.3-.8.9-.8h1Z"/>
+				<path d="M69.05,70a2.06,2.06,0,0,0-1.9,1.1h0s-.2-.9-.2-1a.1.1,0,0,0-.1-.1h-1.5a.1.1,0,0,0-.1.1v6.1a.1.1,0,0,0,.1.1h1.7a.1.1,0,0,0,.1-.1v-3.4c0-.6.4-1,1.5-1h.4a.1.1,0,0,0,.1-.1l-.1-1.7Z"/>
+				<path d="M40.65,70c-2.2,0-3,1.3-3,3.3s.8,3.3,3,3.3,3-1.3,3-3.3S43,70,40.65,70Zm0,5c-.9,0-1-.7-1-1.7s.2-1.7,1-1.7,1,.7,1,1.7S41.55,75,40.65,75Z"/>
+				<path d="M52.55,63.42a21,21,0,0,0,21.2-20.8v-.2c.3-5.2-1.5-13.6-5.9-20.5-.1-.2-.3-.1-.3.1.3,1.1.4,3-1.3,2.8-3-.2.1-6.5-6.4-11-.1-.1-.3,0-.2.2.4.8.7,3.5-.3,4.4-.8.7-2.4.5-3.8-1.9a10.56,10.56,0,0,1,.1-10.9c.1-.2,0-.3-.2-.2-9,3-10.8,13.5-12.7,17.4-.3.6-.6,1-1.1.9-1.6-.1-.5-3.6.1-4.8.1-.2-.1-.3-.2-.2a38,38,0,0,0-9.6,20.7,5.5,5.5,0,0,0-.1,1.2h0v1.5A20.81,20.81,0,0,0,52.55,63.42Zm.3-30.7a9.73,9.73,0,0,1,9.7,9.8,9.58,9.58,0,0,1-9.8,9.6,9.7,9.7,0,1,1,.1-19.4Z"/>
+			</svg>
+		</a>
 	</div>
 
 
 </footer>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <script src="assets/dist/concat.min.js"></script>
 
 </body>
