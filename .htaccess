@@ -1,0 +1,16 @@
+ <IfModule mod_headers.c>    
+      Header add Access-Control-Allow-Origin "*" 
+ </IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Página de contato
+  RewriteRule ^home/?$ / [NC,L]
+  RewriteRule ^sobre/?$ /#sobre [NC,L]
+  RewriteRule ^programacao/?$ /#programacao [NC,L]
+  RewriteRule ^avaliadores/?$ /#avaliadores [NC,L]
+  RewriteRule ^organizadores/?$ /#organizadores [NC,L]
+  RewriteRule ^convidados/?$ /#convidados [NC,L]
+
+</IfModule>
