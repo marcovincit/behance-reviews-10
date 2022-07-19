@@ -1,6 +1,6 @@
 # 10th Bēhance <br> Portfolio Reviews <br> Belo Horizonte
 
-<img src="assets/img/behance-10th-screenshot.jpg">
+<img src="assets/img/behance-10th-screenshot-2.jpg">
 
 ### Shape Your Creative Portfolio with Expert & Peer Feedback
 Our goal is promote the meeting of creative people, share their work and receive constructive feedback from huge professionals in Minas Gerais.
